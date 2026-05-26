@@ -6,9 +6,14 @@ st.title("Empresas Parceiras")
 
 col1, col2, col3 = st.columns(3)
 
+# =========================
 # SPACEX
+# =========================
 with col1:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg")
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg",
+        width=200
+    )
     st.subheader("SpaceX")
     st.write("""
     Empresa aeroespacial criada por Elon Musk.
@@ -16,9 +21,14 @@ with col1:
     """)
     st.link_button("Acessar Site", "https://www.spacex.com/")
 
+# =========================
 # APPLE
+# =========================
 with col2:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg")
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+        width=120  # 👈 menor para ficar proporcional
+    )
     st.subheader("Apple")
     st.write("""
     Empresa mundialmente conhecida pelos seus produtos tecnológicos,
@@ -26,9 +36,14 @@ with col2:
     """)
     st.link_button("Acessar Site", "https://www.apple.com/br/")
 
+# =========================
 # NETFLIX
+# =========================
 with col3:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg")
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+        width=200
+    )
     st.subheader("Netflix")
     st.write("""
     Plataforma de streaming com filmes, séries e documentários
