@@ -6,29 +6,32 @@ st.title("Empresas Parceiras")
 
 col1, col2, col3 = st.columns(3)
 
+# SPACEX
 with col1:
-    try:
-        st.image("spacex.png")
-    except:
-        st.write("Imagem não encontrada")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg")
     st.subheader("SpaceX")
-    st.write("Empresa aeroespacial criada por Elon Musk.")
+    st.write("""
+    Empresa aeroespacial criada por Elon Musk.
+    Atua no desenvolvimento de foguetes e viagens espaciais.
+    """)
     st.link_button("Acessar Site", "https://www.spacex.com/")
 
+# APPLE
 with col2:
-    try:
-        st.image("apple.png")
-    except:
-        st.write("Imagem não encontrada")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg")
     st.subheader("Apple")
-    st.write("Empresa conhecida por iPhone, iPad e MacBook.")
+    st.write("""
+    Empresa mundialmente conhecida pelos seus produtos tecnológicos,
+    como iPhone, iPad e MacBook.
+    """)
     st.link_button("Acessar Site", "https://www.apple.com/br/")
 
+# NETFLIX
 with col3:
-    try:
-        st.image("netflix.png")
-    except:
-        st.write("Imagem não encontrada")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg")
     st.subheader("Netflix")
-    st.write("Plataforma de streaming mundial.")
+    st.write("""
+    Plataforma de streaming com filmes, séries e documentários
+    assistidos no mundo inteiro.
+    """)
     st.link_button("Acessar Site", "https://www.netflix.com/br/")
